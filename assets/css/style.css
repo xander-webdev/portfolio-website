@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+.showcase {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+    z-index: 2;
+    transition: 0.5s;
+}
+.showcase.active{
+    right:300px;
+}
+
+.showcase header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.showcase video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+
+}
+
+.text {
+    position: relative;
+    z-index: 3;
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+
+}
+
+.text h2 {
+    font-size: 4.5em;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 1em;
+}
+
+.text h3 {
+    font-size: 1.5em;
+    text-transform: capitalize;
+    color: #999999;
+    font-weight: 600;
+    line-height: 1em;
+}
+
+.text a {
+    display: inline-block;
+    font-size: 1em;
+    background-color: #F5F5F5;
+    padding: 10px;
+    border-radius: 28px;
+    text-decoration: none;
+    color: #000;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.2s;
+}
+
+.text a:hover {
+    letter-spacing: 6px;
+}
+
+.text a:active {
+    background-color: #999999;
+    color: #F5F5F5;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.toggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: url("/assets/media/menu.png");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+}
+
+.toggle.active {
+    background: url("/assets/media/close.png");
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    cursor: pointer;
+}
+
+.menu {
+    position: absolute;
+    top:0;
+    right:0;
+    width:300px;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.menu ul {
+    position: relative;
+    list-style: none;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-size: 24px;
+    color:#111;
+}
+.menu ul li a:hover{
+    color:#999999;
+}
+
+@media(max-width:991px) {
+
+    .showcase,
+    .showcase header {
+        padding: -40px;
+    }
+
+    .text h2 {
+        font-size: 4em;
+    }
+
+    .text h3 {
+        font-size: 1.5em;
+    }
+}
