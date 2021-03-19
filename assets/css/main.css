@@ -17,7 +17,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-color: #111;
     color: #fff;
     z-index: 2;
     transition: 0.5s;
@@ -57,7 +57,7 @@
     width: 100%;
     height: 100%;
     background: #000;
-    opacity: 0.5;
+    opacity: 0.7;
 
 }
 
@@ -85,7 +85,7 @@
     line-height: 1em;
 }
 
-.text a {
+.button{
     display: inline-block;
     font-size: 1em;
     background-color: #F5F5F5;
@@ -99,14 +99,11 @@
     transition: 0.2s;
 }
 
-.text a:hover {
+.button:hover {
     letter-spacing: 6px;
 }
 
-.text a:active {
-    background-color: #999999;
-    color: #F5F5F5;
-}
+
 
 .logo {
     cursor: pointer;
